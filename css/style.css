@@ -135,10 +135,10 @@ article button:hover{
   padding-top: 150px;
 }
 
-.ola-2{
+/* .ola-2{
     position: relative;
     top: -205px;
-}
+} */
 
 /* ---------------- Formulario -------------------- */
 
@@ -161,6 +161,16 @@ article button:hover{
     max-width: 300px;
     background: wheat;
     border-radius: 5px;
+}
+
+/* ---------------- Comprar ----------------------- */
+
+.intro-section{
+  background: linear-gradient(to right,rgb(18, 163, 163), rgb(19, 109, 109) ) ;
+  min-height: 100vh;
+  grid-area: main;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 /* ---------------- Footer ------------------------ */

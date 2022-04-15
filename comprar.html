@@ -89,148 +89,70 @@
       </div>
     </nav>
 
-    <!-- Productos -->
-    <section class="sect-pro">
-      <main class="Prod">
-        <article class="article">
-          <h2>Cervezas</h2>
-          <p>Gran variedad entre latas y botellas retornables</p>
-          <ul>
-            <li>Brahama</li>
-            <li>Heineken</li>
-            <li>Salta</li>
-            <li>Andes</li>
-          </ul>
-          <img class="img-pro" src="img/nos3.png" alt="" />
-          <button>Ver mas</button>
-        </article>
-
-        <article class="article">
-          <h2>Vodkas</h2>
-          <p>Las mas vendidas</p>
-          <ul>
-            <li>Adsolut</li>
-            <li>Smirnorff</li>
-            <li>Skyy</li>
-          </ul>
-          <img class="img-pro" src="img/nos4.png" alt="" />
-          <button>Ver mas</button>
-        </article>
-
-        <article class="article">
-          <h2>Sin Alcohol</h2>
-          <p>Todo lo que necesitas para preparar tus tragos</p>
-          <ul>
-            <li>Coca</li>
-            <li>Sprite</li>
-            <li>Baggio</li>
-            <li>Manaos</li>
-          </ul>
-          <img class="img-pro" src="img/sinalco.png" alt="" />
-          <button>Ver mas</button>
-        </article>
-
-        <article class="article">
-          <h2>Vinos</h2>
-          <p>Los mas reconocidos</p>
-          <ul>
-            <li>Blanco</li>
-            <li>Tinto</li>
-          </ul>
-          <img class="img-pro" src="img/vinos.png" alt="" />
-          <button>Ver mas</button>
-        </article>
-
-        <article class="article">
-          <h2>Espumantes</h2>
-          <p>Gran variedad</p>
-          <ul>
-            <li>Chandon</li>
-            <li>Federico de Alvear</li>
-          </ul>
-          <img class="img-pro" src="img/espu.png" alt="" />
-          <button>Ver mas</button>
-        </article>
-
-        <article class="article">
-          <h2>Espirituosos</h2>
-          <p>Gran variedad</p>
-          <ul>
-            <li>Red Label</li>
-            <li>Gordon</li>
-            <li>Tequila</li>
-          </ul>
-          <img class="img-pro" src="img/nos5.png" alt="" />
-          <button>Ver mas</button>
-        </article>
-      </main>
-    </section>
-
-    <!-- Formulario -->
-
-    <section id="seccion-contacto">
-      <div
-        class="container border-danger"
-        style="max-width: 400px"
-        id="contenedor-formulario"
-      >
-        <div id="titulo-formulario" class="text-center mb-4">
+    <!-- Formulario para compra -->
+    <section class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="display-2">
+              <span class="display-2--intro">Comprar</span>
+            </h1>
+          </div>
           <div>
-            <img
-              src="./img/peque195177o.svg"
-              alt="contacto"
-              class="img-fluid"
-            />
+            <form action="Datos">
+              <fieldset>
+                <legend>Tu pedido</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre" />
+                <br />
+
+                <label for="producto">Productos:</label>
+                <input type="text" name="producto" id="producto" />
+                <br />
+
+                <label for="direccion">Direccion:</label>
+                <input type="text" name="direccion" id="direccion" />
+                <br />
+
+                <div>Tarjeta</div>
+                <input type="radio" name="metodo" value="tarjeta" />
+                <br />
+
+                <div>Efectivo</div>
+                <input type="radio" name="metodo" value="Efectivo" />
+                <br />
+
+                <div>MercadoPago</div>
+                <input type="radio" name="metodo" value="MP" />
+                <br />
+
+                <legend>Entrega</legend>
+                <select name="Entrega" id="Entrega">
+                  <option value="Retiro del local">Retiro del local</option>
+                  <option value="Envio">Envio</option>
+                </select>
+                <br />
+
+                <label for="mensaje">Mensaje</label>
+                <br />
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <br />
+
+                <div>Acepto los terminos de condiciones</div>
+                <input type="checkbox" name="acepta" id="1" />
+                <br />
+
+                <input type="submit" valeu="Enviar" />
+                <input type="reset" value="Limpiar formulario" />
+              </fieldset>
+            </form>
           </div>
-          <h2>Contactanos</h2>
-          <p class="fs-5">Hace tu pedido o comunicate con nosotros</p>
         </div>
-
-        <form method="POST" data-netlify="true" action="#">
-          <div class="mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Nombre"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <input
-              type="tel"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Telefono"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Email"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-
-          <div class="mb-3">
-            <button type="button" class="btn btn-danger w-50 fs-5 mt-1 ms-2">
-              Enviar mensaje
-            </button>
-          </div>
-        </form>
       </div>
     </section>
 
